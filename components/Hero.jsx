@@ -6,7 +6,7 @@ function heroCtaButtons() {
         <span class="micro">Отвечу лично</span>
       </div>
       <div class="cta-item">
-        <a class="btn btn-telegram" href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+        <a class="btn btn-telegram" href="tg://user?id=471578666" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
         <span class="micro">Подберу тур под ваш бюджет</span>
       </div>
       <div class="cta-item">
