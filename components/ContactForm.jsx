@@ -2,7 +2,7 @@ function contactCtaButtons() {
   return `
     <div class="cta-row">
       <div class="cta-item">
-        <a class="btn btn-primary" href="tel:+70000000000">Позвонить</a>
+        <a class="btn btn-primary" href="tel:+79199440052">Позвонить</a>
         <span class="micro">Отвечу лично</span>
       </div>
       <div class="cta-item">
@@ -10,7 +10,7 @@ function contactCtaButtons() {
         <span class="micro">Подберу тур под ваш бюджет</span>
       </div>
       <div class="cta-item">
-        <a class="btn btn-vk" href="https://vk.com/your_vk" target="_blank" rel="noopener noreferrer">Написать в VK</a>
+        <a class="btn btn-vk" href="https://vk.com/turagentonline72" target="_blank" rel="noopener noreferrer">Написать в VK</a>
         <span class="micro">Отвечу лично в VK</span>
       </div>
       <div class="cta-item">
