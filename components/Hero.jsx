@@ -10,7 +10,12 @@ function heroCtaButtons() {
         <span class="micro">Подберу тур под ваш бюджет</span>
       </div>
       <div class="cta-item">
-        <a class="btn btn-vk" href="https://vk.com/turagentonline72" target="_blank" rel="noopener noreferrer">Написать в VK</a>
+        <a
+          class="btn btn-vk"
+          href="https://vk.com/turagentonline72"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Написать в VK</a>
         <span class="micro">Отвечу лично в VK</span>
       </div>
       <div class="cta-item">
