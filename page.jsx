@@ -12,3 +12,4 @@ window.Page = function Page() {
     ${window.Footer()}
   `;
 };
+export default Page;
