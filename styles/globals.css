@@ -379,10 +379,6 @@ p {
   animation: fade-up 0.55s var(--ease-out) 0.06s both;
 }
 
-.anim-section--hero .hero-copy > h1 {
-  animation: fade-up 0.62s var(--ease-out) 0.14s both;
-}
-
 .anim-section--hero .hero-copy > .lead {
   animation: fade-up 0.58s var(--ease-out) 0.22s both;
 }
@@ -418,6 +414,28 @@ p {
 .hero-copy {
   min-width: 0;
   padding-top: 0.25rem;
+}
+
+.hero-title {
+  margin: 0 0 0.4em;
+}
+
+.hero-blur-text {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.28em;
+  row-gap: 0.12em;
+  font: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.blur-text__segment {
+  display: inline-block;
+  will-change: transform, filter, opacity;
 }
 
 .trust-strip {
@@ -725,7 +743,6 @@ p {
   }
 
   .anim-section--hero .hero-copy > .kicker,
-  .anim-section--hero .hero-copy > h1,
   .anim-section--hero .hero-copy > .lead,
   .anim-section--hero .trust-strip,
   .anim-section--hero .cta-row--hero-primary,

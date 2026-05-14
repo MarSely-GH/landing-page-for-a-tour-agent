@@ -1,3 +1,5 @@
+import { HERO_MAIN_TITLE } from "../data/heroTitle.js";
+
 function heroCtaPrimary() {
   return `
     <div class="cta-row cta-row--hero-primary">
@@ -34,7 +36,9 @@ window.Hero = function Hero() {
       <div class="container hero-editorial-inner">
         <div class="hero-copy">
           <p class="kicker">Персональный подбор</p>
-          <h1>Отдых под моим крылом: вы отдыхаете — я беру организацию на себя</h1>
+          <h1 class="hero-title">
+            <span id="hero-blur-title-root">${HERO_MAIN_TITLE}</span>
+          </h1>
           <p class="lead">
             Подбираю туры для семейных пар, семей с детьми и путешественниц, ценящих комфортный отдых…
           </p>
