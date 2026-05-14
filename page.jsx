@@ -1,15 +1,7 @@
-window.Page = function Page() {
-  return `
-    ${window.Header()}
-    <main>
-      ${window.Hero()}
-      ${window.Advantages()}
-      ${window.Destinations()}
-      ${window.Reviews()}
-      ${window.FAQ()}
-      ${window.ContactForm()}
-    </main>
-    ${window.Footer()}
-  `;
-};
-export default Page;
+export default function Page() {
+  return (
+    <div>
+      <h1>Сайт работает 🚀</h1>
+    </div>
+  );
+}
