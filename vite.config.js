@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+/** Production: путь репозитория на GitHub Pages. Development: корень, чтобы открывался http://localhost:5173/ */
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: '/landing-page-for-a-tour-agent/',
-})
+  base: mode === "production" ? "/landing-page-for-a-tour-agent/" : "/",
+}));
