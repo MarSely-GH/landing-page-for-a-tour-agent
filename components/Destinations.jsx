@@ -1,14 +1,20 @@
 window.Destinations = function Destinations() {
-  const cards = window.destinations
-    .map((item) => window.Card(`<h3>${item.title}</h3><p class="muted">${item.description}</p>`))
+  const rows = window.destinations
+    .map(
+      (item) => `
+      <li class="dest-row">
+        <span class="dest-row__title">${item.title}</span>
+        <span class="dest-row__desc">${item.description}</span>
+      </li>`
+    )
     .join("");
 
   return `
-    <section class="section">
-      <div class="container">
+    <section class="section section-destinations anim-section">
+      <div class="container container--narrow">
         <h2>Направления</h2>
-        <p class="muted">Подберу направление под ваш ритм отдыха - от спокойного семейного до более насыщенного.</p>
-        <div class="grid-3 mt-14">${cards}</div>
+        <p class="section-lead">Подберу ритм отдыха — от спокойного семейного до более насыщенного.</p>
+        <ul class="dest-list">${rows}</ul>
       </div>
     </section>
   `;

@@ -1,13 +1,22 @@
 window.Reviews = function Reviews() {
-  const cards = window.reviews
-    .map((review) => window.Card(`<p class="muted">"${review.text}"</p><h3 class="mt-14">${review.name}</h3>`))
+  const blocks = window.reviews
+    .map(
+      (review) => `
+      <figure class="quote-block">
+        <blockquote class="quote-block__text">
+          <p>${review.text}</p>
+        </blockquote>
+        <figcaption class="quote-block__cite">${review.name}</figcaption>
+      </figure>`
+    )
     .join("");
 
   return `
-    <section class="section">
-      <div class="container">
-        <h2>Отзывы путешественников</h2>
-        <div class="grid-3 mt-14">${cards}</div>
+    <section class="section section-reviews anim-section">
+      <div class="container container--narrow">
+        <h2>Отзывы</h2>
+        <p class="section-lead">Слова тех, кто уже выезжал со мной.</p>
+        <div class="quote-stack">${blocks}</div>
       </div>
     </section>
   `;
