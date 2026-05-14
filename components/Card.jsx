@@ -1,4 +1,3 @@
-window.Card = function Card(content, className = "") {
-  const classes = `card ${className}`.trim();
-  return `<div class="${classes}">${content}</div>`;
-};
+export default function Card({ children, className = "" }) {
+  return <div className={`card ${className}`.trim()}>{children}</div>;
+}

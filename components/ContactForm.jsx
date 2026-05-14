@@ -1,34 +1,54 @@
-function contactCtaButtons() {
-  return `
-    <div class="cta-row cta-row--contact">
-      <div class="cta-item">
-        <a class="btn btn-phone" href="tel:+79199440052">Позвонить</a>
-        <span class="micro">Лично</span>
+function ContactCtaButtons() {
+  return (
+    <div className="cta-row cta-row--contact">
+      <div className="cta-item">
+        <a className="btn btn-phone" href="tel:+79199440052">
+          Позвонить
+        </a>
+        <span className="micro">Лично</span>
       </div>
-      <div class="cta-item">
-        <a class="btn btn-telegram" href="https://t.me/O_lgaS22" target="_blank" rel="noopener noreferrer">Telegram</a>
-        <span class="micro">Быстрый ответ</span>
+      <div className="cta-item">
+        <a
+          className="btn btn-telegram"
+          href="https://t.me/O_lgaS22"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Telegram
+        </a>
+        <span className="micro">Быстрый ответ</span>
       </div>
-      <div class="cta-item">
-        <a class="btn btn-vk" href="https://vk.com/turagentonline72" target="_blank" rel="noopener noreferrer">VK</a>
-        <span class="micro">Удобно вам</span>
+      <div className="cta-item">
+        <a
+          className="btn btn-vk"
+          href="https://vk.com/turagentonline72"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VK
+        </a>
+        <span className="micro">Удобно вам</span>
       </div>
-      <div class="cta-item">
-        <a class="btn btn-ghost" href="https://t.me/O_lgaS22" target="_blank" rel="noopener noreferrer">Подборка туров</a>
-        <span class="micro">Без обязательств</span>
+      <div className="cta-item">
+        <a className="btn btn-ghost" href="https://t.me/O_lgaS22" target="_blank" rel="noopener noreferrer">
+          Подборка туров
+        </a>
+        <span className="micro">Без обязательств</span>
       </div>
     </div>
-  `;
+  );
 }
 
-window.ContactForm = function ContactForm() {
-  return `
-    <section class="section section-contact anim-section" id="contact">
-      <div class="container container--narrow section-contact__inner">
+export default function ContactForm() {
+  return (
+    <section className="section section-contact anim-section" id="contact">
+      <div className="container container--narrow section-contact__inner">
         <h2>Свяжемся и подберём отдых</h2>
-        <p class="section-lead">Напишите или позвоните — разберём пожелания и бюджет без спешки и без обязательств.</p>
-        ${contactCtaButtons()}
+        <p className="section-lead">
+          Напишите или позвоните — разберём пожелания и бюджет без спешки и без обязательств.
+        </p>
+        <ContactCtaButtons />
       </div>
     </section>
-  `;
-};
+  );
+}

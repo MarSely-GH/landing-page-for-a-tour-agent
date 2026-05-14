@@ -1,4 +1,4 @@
-window.destinations = [
+export const destinations = [
   { title: "Турция", description: "Семейный формат и удобные отели." },
   { title: "Египет", description: "Теплое море и отдых круглый год." },
   { title: "Шри-Ланка", description: "Природа, океан и спокойный темп." },

@@ -1,9 +1,9 @@
-window.Footer = function Footer() {
-  return `
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="footer-note">Тестовая версия лендинга. Замените телефон, Telegram и имя перед публикацией.</p>
+export default function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        <p className="footer-note">Тестовая версия лендинга. Замените телефон, Telegram и имя перед публикацией.</p>
       </div>
     </footer>
-  `;
-};
+  );
+}
